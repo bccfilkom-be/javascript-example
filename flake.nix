@@ -19,7 +19,7 @@
   in {
     devShells = forEachSupportedSystem ({pkgs}: {
       default = pkgs.mkShell {
-        packages = with pkgs; [deno];
+        packages = with pkgs; [deno k6];
       };
     });
   };
